@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: hu | Ákos's /home]]></title>
+  <link href="http://akoskovacs.github.com/blog/categories/hu/atom.xml" rel="self"/>
+  <link href="http://akoskovacs.github.com/"/>
+  <updated>2011-11-13T20:45:54+01:00</updated>
+  <id>http://akoskovacs.github.com/</id>
+  <author>
+    <name><![CDATA[Ákos Kovács]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Helló világ újra]]></title>
+    <link href="http://akoskovacs.github.com/blog/2011/11/10/hello-vilag/"/>
+    <updated>2011-11-10T17:14:00+01:00</updated>
+    <id>http://akoskovacs.github.com/blog/2011/11/10/hello-vilag</id>
+    <content type="html"><![CDATA[<p>És ismét eljött az idő, mint oly sokszor, hogy megcsodáljam milyen blog-megoldásokat találhat a szegényember. Eddig Wordpress hívő voltam. Egyszerű, szép, letisztult. Olyan túlságosan <em>buta</em>.
+Az egész persze a worpress.com-on volt hostingolva, amin nem igazán lehet (azaz nehezen és természetesen ingyen) a meglévőkön kívül további modulokat használatba venni. Meglévők száma pedig igen korlátozott. Valahogy a témák sem jöttek be annyira, módosításukhoz, pedig még nehezebben oldható meg. Arról nem is beszélve, hogy a beszúrt kódok (Syntax highlighter-el) nem mindig úgy jelennek meg, ahogy az ember gondolná.</p>
+
+<h3>Octopress a megmentő</h3>
+
+<p>Véletlenül amikor valami, talán Ruby on Rails-es témában kerestem, ráakadtam egy blogra aminek nagyon szép témája, tipográfiája volt. Így akadtam rá az Octopressre, ami a Github által javasolt Jekyll statikus blogmotorra épül. <strong>A</strong> megoldás egy igazi "coding" bloghoz.</p>
+
+<pre><code>- Kivállóan integrálódig Github, Twitter és egyéb szolgáltatásokba.
+- Az alap témája is gyönyörű
+- Könnyen módosítható
+- Jól használható
+- A pluginek iszonyat jók, olyanok mint (block quote, poll quote, syntax highlight, stb...)
+</code></pre>
+
+<p>Igaz macerásabb mint a többi, de megéri.</p>
+
+<h3>Telepítése</h3>
+
+<p><code>bash
+$ git clone git://github.com/imathis/octopress.git
+$ cd octopress
+$ bundle install    # Függőségek telepítése    
+$ bundle exec rake install   # Alaptéma letöltése
+$ bundle exec rake new_post["poszt_nev"]   # A fájl a sources/_posts/{év-hónap-nap}/poszt_nev.markdown
+</code>
+Ezután már csak módosítanunk kell a megadott fájlt, hozzáadni a repóhoz és feltölteni az egészet a Github Pages-re.</p>
+]]></content>
+  </entry>
+  
+</feed>
